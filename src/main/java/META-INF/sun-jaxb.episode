@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.01.24 a las 02:13:19 PM COT 
+
+  -->
+      
+    <bindings xmlns:tns="http://tempuri.org/" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.example.springboot.wsdl.mapping"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:wm_LoginCanalesResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmLoginCanalesResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_LoginCanales2Response">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmLoginCanales2Response"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_OlvidoClaveResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmOlvidoClaveResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CambioClaveResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCambioClaveResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CambioClave2Response">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCambioClave2Response"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdateResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdateResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_pb_ObtenerAlmacenEnvioResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPbObtenerAlmacenEnvioResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_pb_devolver_ZonaResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPbDevolverZonaResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ModificacionProductoCentroCostoResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmModificacionProductoCentroCostoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesExpInsumosResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesExpInsumosResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesCompletarTrxResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesCompletarTrxResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdateDirecionesClientesResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdateDirecionesClientesResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdateTrxResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdateTrxResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CargaArchivoPlanoResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCargaArchivoPlanoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_LoginCanales">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmLoginCanales"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_LoginCanales2">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmLoginCanales2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_OlvidoClave">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmOlvidoClave"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CambioClave">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCambioClave"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CambioClave2">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCambioClave2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdate">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdate"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransacciones">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransacciones"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_SolicitudDatos">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmSolicitudDatos"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_SolicitudDatosResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmSolicitudDatosResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_pb_ObtenerAlmacenEnvio">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPbObtenerAlmacenEnvio"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_pb_devolver_Zona">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPbDevolverZona"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaCentrosCostoCliente">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaCentrosCostoCliente"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaCentrosCostoClienteResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaCentrosCostoClienteResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ModificacionProductoCentroCosto">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmModificacionProductoCentroCosto"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_Reporte">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmReporte"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ReporteResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmReporteResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_PruebaService">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPruebaService"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_PruebaServiceResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPruebaServiceResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_PruebaServiceConParametro">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPruebaServiceConParametro"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_PruebaServiceConParametroResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmPruebaServiceConParametroResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaProcesosClientes">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaProcesosClientes"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaProcesosClientesResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaProcesosClientesResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaProcesoNumMesa">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaProcesoNumMesa"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ConsultaProcesoNumMesaResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmConsultaProcesoNumMesaResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesExpInsumos">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesExpInsumos"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesCompletarTrx">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesCompletarTrx"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_EnvioTransaccionesAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmEnvioTransaccionesAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenArticulosAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenArticulosAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenArticulosAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenArticulosAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenAnualAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenAnualAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerResumenAnualAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerResumenAnualAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerTRXAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerTRXAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerTRXAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerTRXAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenernewVersionGeneradorArchivosPlanos">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenernewVersionGeneradorArchivosPlanos"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenernewVersionGeneradorArchivosPlanosResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenernewVersionGeneradorArchivosPlanosResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerListadoArchivosAENA">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerListadoArchivosAENA"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_ObtenerListadoArchivosAENAResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmObtenerListadoArchivosAENAResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOfString">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.ArrayOfString"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdateDirecionesClientes">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdateDirecionesClientes"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_InsertUpdateTrx">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmInsertUpdateTrx"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_CargaArchivoPlano">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmCargaArchivoPlano"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_IngresoLogSAP">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmIngresoLogSAP"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_IngresoLogSAPResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmIngresoLogSAPResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_GuardarArchivoBatch">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmGuardarArchivoBatch"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:wm_GuardarArchivoBatchResponse">
+                  
+            <class ref="com.example.springboot.wsdl.mapping.WmGuardarArchivoBatchResponse"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

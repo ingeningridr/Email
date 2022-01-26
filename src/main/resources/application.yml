@@ -1,0 +1,121 @@
+spring:
+  application:
+    name: qacomerssia
+  profiles:
+    active: ${PEDIDOS_APP_PROFILE:development}
+
+# Logger configuration
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    '[org.springframework]': info
+    '[org.hibernate]': info
+    '[com.yale]': info
+
+management:
+  endpoints:
+    web:
+      exposure.include: beans, env, health, info, metrics, mappings
+  endpoint:
+    health:
+      show-details: always
+
+---
+
+server:
+  port: ${DEV_PEDIDOS_APP_PORT:8081}
+
+spring:
+  profiles: development
+ 
+  # Database
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: ${DEV_PEDIDOS_DB_USERNAME}
+    password: ${DEV_PEDIDOS_DB_PASSWORD}
+    url: jdbc:sqlserver://${DEV_PEDIDOS_DB_HOST}:${DEV_PEDIDOS_DB_PORT};database=${DEV_PEDIDOS_DB_NAME};loginTimeout=30;
+    initialization-mode: always
+    continue-on-error: true
+  # JPA properties
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          timezone: ${DEV_PEDIDOS_DB_TIMEZONE}
+        hbm2ddl:
+          '[import_files_sql_extractor]': org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
+  rabbitmq:
+    host: ${DEV_BUS_HOST}
+    port: ${DEV_BUS_PORT}
+    username: ${DEV_BUS_USERNAME}
+    password: ${DEV_BUS_PASSWORD}
+    template:
+      retry:
+        initial-interval: 1000ms
+        max-attempts: 3
+        max-interval: 10000ms
+        multiplier: 1
+
+bus:
+  exchange_name: ${DEV_BUS_EXCHANGE_NAME}
+  clientes:
+    queue_name: ${DEV_BUS_CLIENTES_QUEUE_NAME}
+    routing_key: ${DEV_BUS_CLIENTES_ROUTING_KEY}
+  pedidos:
+    queue_name: ${DEV_BUS_PEDIDOS_QUEUE_NAME}
+    routing_key: ${DEV_BUS_PEDIDOS_ROUTING_KEY}
+
+---
+
+server:
+  port: ${PEDIDOS_APP_PORT:8081}
+
+spring:
+  profiles: production
+ 
+  # Database
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: ${PEDIDOS_DB_USERNAME}
+    password: ${PEDIDOS_DB_PASSWORD}
+    url: jdbc:sqlserver://${PEDIDOS_DB_HOST}:${PEDIDOS_DB_PORT};database=${PEDIDOS_DB_NAME};loginTimeout=30;
+    initialization-mode: never
+    continue-on-error: true
+  # JPA properties
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          timezone: ${PEDIDOS_DB_TIMEZONE}
+        hbm2ddl:
+          '[import_files_sql_extractor]': org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
+  rabbitmq:
+    host: ${BUS_HOST}
+    port: ${BUS_PORT}
+    username: ${BUS_USERNAME}
+    password: ${BUS_PASSWORD}
+    template:
+      retry:
+        initial-interval: 1000ms
+        max-attempts: 3
+        max-interval: 10000ms
+        multiplier: 1
+
+
+bus:
+  exchange_name: ${BUS_EXCHANGE_NAME}
+  clientes:
+    queue_name: ${BUS_CLIENTES_QUEUE_NAME}
+    routing_key: ${BUS_CLIENTES_ROUTING_KEY}
+  pedidos:
+    queue_name: ${BUS_PEDIDOS_QUEUE_NAME}
+    routing_key: ${BUS_PEDIDOS_ROUTING_KEY}
